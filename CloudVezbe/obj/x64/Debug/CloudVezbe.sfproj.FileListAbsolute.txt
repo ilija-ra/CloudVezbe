@@ -1,1 +1,1 @@
-C:\Master materijali\Cloud racunarstvo u infrastrukturnim sistemima\vezbe\project\CloudVezbe\CloudVezbe\obj\x64\Debug\CloudVezbe.sfproj.CoreCompileInputs.cache
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\CloudVezbe\obj\x64\Debug\CloudVezbe.sfproj.CoreCompileInputs.cache
