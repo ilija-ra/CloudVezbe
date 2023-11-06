@@ -1152,11 +1152,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Master materijali\\Cloud racunarstvo u infrastrukturnim sistemima\\vezbe\\project\\CloudVezbe\\Client\\Client.csproj",
+      "projectUniqueName": "C:\\GithubRepositoriesFaculty\\Cloud racunarstvo u infrastrukturnim sistemima\\CloudVezbe\\Client\\Client.csproj",
       "projectName": "Client",
-      "projectPath": "C:\\Master materijali\\Cloud racunarstvo u infrastrukturnim sistemima\\vezbe\\project\\CloudVezbe\\Client\\Client.csproj",
+      "projectPath": "C:\\GithubRepositoriesFaculty\\Cloud racunarstvo u infrastrukturnim sistemima\\CloudVezbe\\Client\\Client.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Master materijali\\Cloud racunarstvo u infrastrukturnim sistemima\\vezbe\\project\\CloudVezbe\\Client\\obj\\",
+      "outputPath": "C:\\GithubRepositoriesFaculty\\Cloud racunarstvo u infrastrukturnim sistemima\\CloudVezbe\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

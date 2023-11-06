@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Master materijali\\Cloud racunarstvo u infrastrukturnim sistemima\\vezbe\\project\\CloudVezbe\\CommunicationLibrary\\CommunicationLibrary.csproj",
+      "projectUniqueName": "C:\\GithubRepositoriesFaculty\\Cloud racunarstvo u infrastrukturnim sistemima\\CloudVezbe\\CommunicationLibrary\\CommunicationLibrary.csproj",
       "projectName": "CommunicationLibrary",
-      "projectPath": "C:\\Master materijali\\Cloud racunarstvo u infrastrukturnim sistemima\\vezbe\\project\\CloudVezbe\\CommunicationLibrary\\CommunicationLibrary.csproj",
+      "projectPath": "C:\\GithubRepositoriesFaculty\\Cloud racunarstvo u infrastrukturnim sistemima\\CloudVezbe\\CommunicationLibrary\\CommunicationLibrary.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Master materijali\\Cloud racunarstvo u infrastrukturnim sistemima\\vezbe\\project\\CloudVezbe\\CommunicationLibrary\\obj\\",
+      "outputPath": "C:\\GithubRepositoriesFaculty\\Cloud racunarstvo u infrastrukturnim sistemima\\CloudVezbe\\CommunicationLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

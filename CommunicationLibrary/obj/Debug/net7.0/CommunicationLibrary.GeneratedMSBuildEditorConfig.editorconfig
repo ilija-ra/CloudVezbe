@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CommunicationLibrary
-build_property.ProjectDir = C:\Master materijali\Cloud racunarstvo u infrastrukturnim sistemima\vezbe\project\CloudVezbe\CommunicationLibrary\
+build_property.ProjectDir = C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\CommunicationLibrary\
