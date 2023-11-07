@@ -6,11 +6,11 @@ namespace Client.Controllers
     [Route("[controller]")]
     public class PersonsController : ControllerBase
     {
-        [HttpPost]
-        [Route("BuyBook")]
-        public async Task<IActionResult> BuyBook()
-        {
-            return Ok(null!);
-        }
+        //[HttpPost]
+        //[Route("BuyBook")]
+        //public async Task<IActionResult> BuyBook()
+        //{
+        //    return Ok(null!);
+        //}
     }
 }
