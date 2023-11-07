@@ -47,5 +47,23 @@ namespace Client.Controllers
 
             return books;
         }
+
+        [HttpDelete]
+        [Route("Delete/{id}")]
+        public async Task Delete(long id)
+        {
+            IBookAsync? bookProxy = ServiceProxy.Create<IBookAsync>(new Uri("fabric:/CloudVezbe/ValidatorStatefulService"), new ServicePartitionKey(id % 3));
+
+            await bookProxy.DeleteBookAsync(id);
+        }
+
+        [HttpPost]
+        [Route("Purchase/{id}")]
+        public async Task Purchase(long id)
+        {
+            IBookAsync? bookProxy = ServiceProxy.Create<IBookAsync>(new Uri("fabric:/CloudVezbe/ValidatorStatefulService"), new ServicePartitionKey(id % 3));
+
+            await bookProxy.PurchaseBookAsync(id);
+        }
     }
 }

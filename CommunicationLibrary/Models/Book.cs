@@ -22,5 +22,8 @@ namespace CommunicationLibrary.Models
 
         [DataMember]
         public double? Price { get; set; }
+
+        [DataMember]
+        public int? Quantity { get; set; }
     }
 }

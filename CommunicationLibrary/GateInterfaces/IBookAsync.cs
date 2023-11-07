@@ -6,8 +6,12 @@ namespace CommunicationLibrary.GateInterfaces
     {
         Task SaveBookAsync(string book);
 
-        Task<string> GetBookByIdAsync(long id);
+        Task<string> GetBookByIdAsync(long bookId);
 
         Task<List<string>> GetAllBooksAsync();
+
+        Task DeleteBookAsync(long bookId);
+
+        Task PurchaseBookAsync(long bookId);
     }
 }
