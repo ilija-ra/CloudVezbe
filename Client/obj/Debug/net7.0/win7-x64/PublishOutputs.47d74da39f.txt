@@ -323,6 +323,7 @@ C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\Clou
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\mscorrc.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\msquic.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\aspnetcorev2_inprocess.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\Microsoft.OpenApi.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\Microsoft.ServiceFabric.Internal.Strings.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\Microsoft.ServiceFabric.Internal.dll
@@ -346,5 +347,19 @@ C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\Clou
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\System.Private.ServiceModel.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\cs\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\de\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\es\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\fr\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\it\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\ja\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\ko\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\pl\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\pt-BR\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\ru\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\tr\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\zh-Hant\System.Private.ServiceModel.resources.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\CommunicationLibrary.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\obj\Debug\net7.0\win7-x64\PubTmp\Out\CommunicationLibrary.pdb

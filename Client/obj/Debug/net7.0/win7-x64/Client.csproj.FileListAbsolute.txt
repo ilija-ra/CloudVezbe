@@ -1,3 +1,4 @@
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\mscordbi.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\appsettings.Development.json
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\appsettings.json
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Client.exe
@@ -5,6 +6,7 @@ C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\Clou
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Client.runtimeconfig.json
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Client.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Client.pdb
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Microsoft.Bcl.AsyncInterfaces.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Microsoft.OpenApi.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Microsoft.ServiceFabric.Internal.Strings.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Microsoft.ServiceFabric.Internal.dll
@@ -28,6 +30,20 @@ C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\Clou
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Swashbuckle.AspNetCore.Swagger.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\System.Private.ServiceModel.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\cs\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\de\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\es\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\fr\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\it\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\ja\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\ko\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\pl\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\pt-BR\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\ru\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\tr\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\zh-Hant\System.Private.ServiceModel.resources.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Microsoft.CSharp.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Microsoft.VisualBasic.Core.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\Microsoft.VisualBasic.dll
@@ -342,7 +358,6 @@ C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\Clou
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\hostpolicy.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\mscordaccore.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\mscordaccore_amd64_amd64_7.0.22.51805.dll
-C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\mscordbi.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\mscorrc.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\msquic.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client\bin\Debug\net7.0\win7-x64\aspnetcorev2_inprocess.dll

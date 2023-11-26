@@ -1,0 +1,1 @@
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bookstore\bin\Debug\net6.0\win7-x64\mscordbi.dll

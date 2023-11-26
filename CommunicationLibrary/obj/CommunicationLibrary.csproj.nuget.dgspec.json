@@ -47,6 +47,10 @@
             "Microsoft.ServiceFabric.Services.Remoting": {
               "target": "Package",
               "version": "[7.0.1816, )"
+            },
+            "System.Private.ServiceModel": {
+              "target": "Package",
+              "version": "[4.10.3, )"
             }
           },
           "imports": [

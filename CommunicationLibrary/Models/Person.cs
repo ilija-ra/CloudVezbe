@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Client.Models
+namespace CommunicationLibrary.Models
 {
     [DataContract]
     public class Person

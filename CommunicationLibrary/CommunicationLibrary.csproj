@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.ServiceFabric.Services.Remoting" Version="7.0.1816" />
+    <PackageReference Include="System.Private.ServiceModel" Version="4.10.3" />
   </ItemGroup>
 
 </Project>
