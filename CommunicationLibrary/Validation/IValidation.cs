@@ -4,14 +4,16 @@ namespace CommunicationLibrary.Validation
 {
     public interface IValidation : IService
     {
-        // BookstoreService
-        Task<List<string>> ValidateBookstoreListAvailableItems();
+        Task<List<string>> ListAvailableItems();
 
-        Task<int> ValidateBookstoreEnlistPurchase(long? bookId, uint? count);
+        Task<string> EnlistPurchase(long? bookId, uint? count);
 
-        Task<string> ValidateBookstoreGetItemPrice(long? id);
+        Task<string> GetItemPrice(long? bookId);
 
-        // BankService
-        Task<int> ValidateBankEnlistMoneyTransfer(long? userId, double? amount);
+        Task<string> GetItem(long? bookId);
+
+        Task<List<string>> ListClients();
+
+        Task<string> EnlistMoneyTransfer(long? userId, double? amount);
     }
 }

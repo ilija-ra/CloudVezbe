@@ -18,7 +18,7 @@ namespace Client.Controllers
 
             var books = new List<Book>();
 
-            List<string> booksJson = await validationProxy.ValidateBookstoreListAvailableItems();
+            List<string> booksJson = await validationProxy.ListAvailableItems();
 
             booksJson.ForEach(x => books.Add(JsonConvert.DeserializeObject<Book>(x)!));
 
@@ -31,7 +31,7 @@ namespace Client.Controllers
         {
             IValidation? validationProxy = ServiceProxy.Create<IValidation>(new Uri("fabric:/CloudVezbe/Validation"));
 
-            return Ok(await validationProxy.ValidateBookstoreEnlistPurchase(bookId, count));
+            return Ok(await validationProxy.EnlistPurchase(bookId, count));
         }
 
         [HttpGet]
@@ -40,62 +40,20 @@ namespace Client.Controllers
         {
             var validationProxy = ServiceProxy.Create<IValidation>(new Uri("fabric:/CloudVezbe/Validation"));
 
-            return Ok(await validationProxy.ValidateBookstoreGetItemPrice(id));
+            return Ok(await validationProxy.GetItemPrice(id));
         }
 
-        //[HttpPost]
-        //[Route("Save")]
-        //public async Task Save([FromBody] Book book)
-        //{
-        //    IBookAsync? bookProxy = ServiceProxy.Create<IBookAsync>(new Uri("fabric:/CloudVezbe/ValidatorStatefulService"), new ServicePartitionKey(book.Id!.Value % 3));
+        [HttpGet]
+        [Route("GetItem/{id}")]
+        public async Task<IActionResult> GetItem(long id)
+        {
+            var validationProxy = ServiceProxy.Create<IValidation>(new Uri("fabric:/CloudVezbe/Validation"));
 
-        //    string bookJson = JsonConvert.SerializeObject(book);
+            string bookJson = await validationProxy.GetItem(id);
 
-        //    await bookProxy.SaveBookAsync(bookJson);
-        //}
+            Book book = JsonConvert.DeserializeObject<Book>(bookJson)!;
 
-        //[HttpGet]
-        //[Route("GetById/{id}")]
-        //public async Task<Book> GetById(long id)
-        //{
-        //    IBookAsync? bookProxy = ServiceProxy.Create<IBookAsync>(new Uri("fabric:/CloudVezbe/ValidatorStatefulService"), new ServicePartitionKey(id % 3));
-
-        //    Book bookModel = JsonConvert.DeserializeObject<Book>(await bookProxy.GetBookByIdAsync(id))!;
-
-        //    return bookModel;
-        //}
-
-        //[HttpGet]
-        //[Route("GetAll")]
-        //public async Task<List<Book>> GetAll()
-        //{
-        //    IBookAsync? bookProxy = ServiceProxy.Create<IBookAsync>(new Uri("fabric:/CloudVezbe/ValidatorStatefulService"), new ServicePartitionKey(new Random().Next() % 3));
-
-        //    var books = new List<Book>();
-
-        //    List<string> booksJson = await bookProxy.GetAllBooksAsync();
-
-        //    booksJson.ForEach(x => books.Add(JsonConvert.DeserializeObject<Book>(x)!));
-
-        //    return books;
-        //}
-
-        //[HttpDelete]
-        //[Route("Delete/{id}")]
-        //public async Task Delete(long id)
-        //{
-        //    IBookAsync? bookProxy = ServiceProxy.Create<IBookAsync>(new Uri("fabric:/CloudVezbe/ValidatorStatefulService"), new ServicePartitionKey(id % 3));
-
-        //    await bookProxy.DeleteBookAsync(id);
-        //}
-
-        //[HttpPost]
-        //[Route("Purchase/{id}")]
-        //public async Task Purchase(long id)
-        //{
-        //    IBookAsync? bookProxy = ServiceProxy.Create<IBookAsync>(new Uri("fabric:/CloudVezbe/ValidatorStatefulService"), new ServicePartitionKey(id % 3));
-
-        //    await bookProxy.PurchaseBookAsync(id);
-        //}
+            return Ok(book);
+        }
     }
 }

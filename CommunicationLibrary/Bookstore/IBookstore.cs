@@ -6,8 +6,10 @@ namespace CommunicationLibrary.Bookstore
     {
         Task<List<string>> ListAvailableItems();
 
-        Task EnlistPurchase(long? bookId, uint? count);
+        Task<string> EnlistPurchase(long? bookId, uint? count);
 
-        Task<double> GetItemPrice(long? bookId);
+        Task<string> GetItemPrice(long? bookId);
+
+        Task<string> GetItem(long? bookId);
     }
 }

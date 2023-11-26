@@ -1,4 +1,3 @@
-C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\TransactionCoordinator\bin\Debug\net7.0\win7-x64\mscordbi.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\TransactionCoordinator\bin\Debug\net7.0\win7-x64\TransactionCoordinator.exe
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\TransactionCoordinator\bin\Debug\net7.0\win7-x64\TransactionCoordinator.deps.json
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\TransactionCoordinator\bin\Debug\net7.0\win7-x64\TransactionCoordinator.runtimeconfig.json
@@ -217,6 +216,7 @@ C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\Clou
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\TransactionCoordinator\bin\Debug\net7.0\win7-x64\hostpolicy.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\TransactionCoordinator\bin\Debug\net7.0\win7-x64\mscordaccore.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\TransactionCoordinator\bin\Debug\net7.0\win7-x64\mscordaccore_amd64_amd64_7.0.22.51805.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\TransactionCoordinator\bin\Debug\net7.0\win7-x64\mscordbi.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\TransactionCoordinator\bin\Debug\net7.0\win7-x64\mscorrc.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\TransactionCoordinator\bin\Debug\net7.0\win7-x64\msquic.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\TransactionCoordinator\bin\Debug\net7.0\win7-x64\CommunicationLibrary.dll
