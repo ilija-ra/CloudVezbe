@@ -14,6 +14,6 @@ namespace CommunicationLibrary.TransactionCoordinator
 
         Task<List<string>> ListClients();
 
-        Task<string> EnlistMoneyTransfer(long? userId, double? amount);
+        Task<string> EnlistMoneyTransfer(long? userSend, long? userReceive, double? amount);
     }
 }

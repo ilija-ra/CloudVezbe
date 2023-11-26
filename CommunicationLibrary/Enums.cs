@@ -15,4 +15,16 @@ namespace CommunicationLibrary.Enums
         [Description("Five")]
         Five
     }
+
+    public enum BankMembership
+    {
+        [Description("Bronze")]
+        Bronze = 1,
+        [Description("Silver")]
+        Silver,
+        [Description("Gold")]
+        Gold,
+        [Description("Platinum")]
+        Platinum
+    }
 }

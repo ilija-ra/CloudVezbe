@@ -5,19 +5,12 @@ using System.Fabric;
 
 namespace Client
 {
-    /// <summary>
-    /// The FabricRuntime creates an instance of this class for each service type instance.
-    /// </summary>
     internal sealed class Client : StatelessService
     {
         public Client(StatelessServiceContext context)
             : base(context)
         { }
 
-        /// <summary>
-        /// Optional override to create listeners (like tcp, http) for this service instance.
-        /// </summary>
-        /// <returns>The collection of listeners.</returns>
         protected override IEnumerable<ServiceInstanceListener> CreateServiceInstanceListeners()
         {
             return new ServiceInstanceListener[]
@@ -48,18 +41,15 @@ namespace Client
                         // Configure the HTTP request pipeline.
                         if (app.Environment.IsDevelopment())
                         {
-                        app.UseSwagger();
-                        app.UseSwaggerUI();
+                            app.UseSwagger();
+                            app.UseSwaggerUI();
                         }
 
                         app.UseAuthorization();
 
                         app.MapControllers();
 
-
                         return app;
-
-
                     }))
             };
         }

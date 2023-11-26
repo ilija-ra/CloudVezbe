@@ -43,7 +43,6 @@
     </ProjectReference>
     <ProjectReference Include="..\TransactionCoordinator\TransactionCoordinator.csproj" />
     <ProjectReference Include="..\Validation\Validation.csproj" />
-    <ProjectReference Include="..\ValidatorStatefulService\ValidatorStatefulService.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>

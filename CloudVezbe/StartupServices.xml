@@ -9,9 +9,6 @@
     <Parameter Name="Bookstore_TargetReplicaSetSize" DefaultValue="3" />
     <Parameter Name="TransactionCoordinator_InstanceCount" DefaultValue="-1" />
     <Parameter Name="Validation_InstanceCount" DefaultValue="-1" />
-    <Parameter Name="ValidatorStatefulService_MinReplicaSetSize" DefaultValue="3" />
-    <Parameter Name="ValidatorStatefulService_PartitionCount" DefaultValue="1" />
-    <Parameter Name="ValidatorStatefulService_TargetReplicaSetSize" DefaultValue="3" />
     <Parameter Name="Client_InstanceCount" DefaultValue="-1" />
   </Parameters>
   <Services>
@@ -39,11 +36,6 @@
       <StatelessService ServiceTypeName="ValidationType" InstanceCount="[Validation_InstanceCount]">
         <SingletonPartition />
       </StatelessService>
-    </Service>
-    <Service Name="ValidatorStatefulService" ServicePackageActivationMode="ExclusiveProcess">
-      <StatefulService ServiceTypeName="ValidatorStatefulServiceType" TargetReplicaSetSize="[ValidatorStatefulService_TargetReplicaSetSize]" MinReplicaSetSize="[ValidatorStatefulService_MinReplicaSetSize]">
-        <UniformInt64Partition PartitionCount="[ValidatorStatefulService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
-      </StatefulService>
     </Service>
     <Service Name="Client" ServicePackageActivationMode="ExclusiveProcess">
       <StatelessService ServiceTypeName="ClientType" InstanceCount="[Client_InstanceCount]">

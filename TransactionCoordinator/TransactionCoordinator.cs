@@ -1,3 +1,4 @@
+using CommunicationLibrary.Bank;
 using CommunicationLibrary.Bookstore;
 using CommunicationLibrary.Enums;
 using CommunicationLibrary.TransactionCoordinator;
@@ -13,6 +14,7 @@ namespace TransactionCoordinator
     internal sealed class TransactionCoordinator : StatelessService, ITransactionCoordinator, ITransaction
     {
         private readonly string bookstorePath = @"fabric:/CloudVezbe/Bookstore";
+        private readonly string bankPath = @"fabric:/CloudVezbe/Bank";
 
         public TransactionCoordinator(StatelessServiceContext context)
             : base(context)
@@ -50,12 +52,16 @@ namespace TransactionCoordinator
 
         public async Task<List<string>> ListClients()
         {
-            throw new NotImplementedException();
+            IBank? bankProxy = ServiceProxy.Create<IBank>(new Uri(bankPath), new ServicePartitionKey((int)PartiotionKeys.Two));
+
+            return await bankProxy.ListClients();
         }
 
-        public async Task<string> EnlistMoneyTransfer(long? userId, double? amount)
+        public async Task<string> EnlistMoneyTransfer(long? userSend, long? userReceive, double? amount)
         {
-            throw new NotImplementedException();
+            IBank? bankProxy = ServiceProxy.Create<IBank>(new Uri(bankPath), new ServicePartitionKey((int)PartiotionKeys.Two));
+
+            return await bankProxy.EnlistMoneyTransfer(userSend!.Value, userReceive!.Value, amount!.Value);
         }
 
         #endregion

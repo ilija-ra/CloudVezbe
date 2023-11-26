@@ -4,8 +4,8 @@ namespace CommunicationLibrary.Bank
 {
     public interface IBank : IService
     {
-        Task ListClients();
+        Task<List<string>> ListClients();
 
-        Task EnlistMoneyTransfer(long userId, double amount);
+        Task<string> EnlistMoneyTransfer(long? userSend, long? userReceive, double? amount);
     }
 }

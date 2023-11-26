@@ -1,13 +1,11 @@
-﻿using System.Runtime.Serialization;
+﻿using CommunicationLibrary.Models.Base;
+using System.Runtime.Serialization;
 
 namespace CommunicationLibrary.Models
 {
     [DataContract]
-    public class Person
+    public class Person : BaseEntity
     {
-        [DataMember]
-        public long? Id { get; set; }
-
         [DataMember]
         public string? FirstName { get; set; }
 

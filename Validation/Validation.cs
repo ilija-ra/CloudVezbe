@@ -22,7 +22,7 @@ namespace Validation
         {
             ITransactionCoordinator? transactionProxy = ServiceProxy.Create<ITransactionCoordinator>(new Uri(transactionCoordinatorPath));
 
-            return (await transactionProxy.ListAvailableItems());
+            return await transactionProxy.ListAvailableItems();
         }
 
         public async Task<string> EnlistPurchase(long? bookId, uint? count)
@@ -72,12 +72,21 @@ namespace Validation
 
         public async Task<List<string>> ListClients()
         {
-            throw new NotImplementedException();
+            ITransactionCoordinator? transactionProxy = ServiceProxy.Create<ITransactionCoordinator>(new Uri(transactionCoordinatorPath));
+
+            return await transactionProxy.ListClients();
         }
 
-        public async Task<string> EnlistMoneyTransfer(long? userId, double? amount)
+        public async Task<string> EnlistMoneyTransfer(long? userSend, long? userReceive, double? amount)
         {
-            throw new NotImplementedException();
+            if (userSend is null || userReceive is null || amount is null)
+            {
+                return null!;
+            }
+
+            ITransactionCoordinator? transactionProxy = ServiceProxy.Create<ITransactionCoordinator>(new Uri(transactionCoordinatorPath));
+
+            return (await transactionProxy.EnlistMoneyTransfer(userSend!.Value, userReceive!.Value, amount!.Value)).ToString();
         }
 
         #endregion

@@ -12,7 +12,7 @@ namespace Bookstore
 {
     internal sealed class Bookstore : StatefulService, IBookstore, CommunicationLibrary.TransactionCoordinator.ITransaction
     {
-        private IReliableDictionary<long, Book> _bookDictionary;
+        private IReliableDictionary<long, Book>? _bookDictionary;
 
         public Bookstore(StatefulServiceContext context)
             : base(context)
@@ -20,27 +20,8 @@ namespace Bookstore
 
         private async Task InitializeBookDictionaryAsync()
         {
-            _bookDictionary = await this.StateManager.GetOrAddAsync<IReliableDictionary<long, Book>>("bookDictionary");
+            _bookDictionary = await StateManager.GetOrAddAsync<IReliableDictionary<long, Book>>("bookDictionary");
         }
-
-        #region ITransaction
-
-        public Task Commit()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> Prepare()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task RollBack()
-        {
-            throw new NotImplementedException();
-        }
-
-        #endregion
 
         #region IBookstoreImplementation
 
@@ -57,19 +38,19 @@ namespace Bookstore
                 new Book(){ Id = 5, Title = "Pride and Prejudice", Author = "Jane Austen", PagesNumber = 279, PublicationYear = 1813, Price = 14.85, Quantity = 10 }
             };
 
-            using (var transaction = this.StateManager.CreateTransaction())
+            using (var transaction = StateManager.CreateTransaction())
             {
                 foreach (Book book in books)
-                    await _bookDictionary.AddOrUpdateAsync(transaction, book.Id!.Value, book, (k, v) => v);
+                    await _bookDictionary!.AddOrUpdateAsync(transaction, book.Id!.Value, book, (k, v) => v);
 
                 await transaction.CommitAsync();
             }
 
             var booksJson = new List<string>();
 
-            using (var transaction = this.StateManager.CreateTransaction())
+            using (var transaction = StateManager.CreateTransaction())
             {
-                var enumerator = (await _bookDictionary.CreateEnumerableAsync(transaction)).GetAsyncEnumerator();
+                var enumerator = (await _bookDictionary!.CreateEnumerableAsync(transaction)).GetAsyncEnumerator();
 
                 while (await enumerator.MoveNextAsync(CancellationToken.None))
                 {
@@ -83,9 +64,9 @@ namespace Bookstore
 
         public async Task<string> EnlistPurchase(long? bookId, uint? count)
         {
-            using (var transaction = this.StateManager.CreateTransaction())
+            using (var transaction = StateManager.CreateTransaction())
             {
-                ConditionalValue<Book> book = await _bookDictionary.TryGetValueAsync(transaction, bookId!.Value);
+                ConditionalValue<Book> book = await _bookDictionary!.TryGetValueAsync(transaction, bookId!.Value);
 
                 if (!book.HasValue)
                 {
@@ -111,9 +92,9 @@ namespace Bookstore
 
         public async Task<string> GetItemPrice(long? bookId)
         {
-            using (var transaction = this.StateManager.CreateTransaction())
+            using (var transaction = StateManager.CreateTransaction())
             {
-                var book = await _bookDictionary.TryGetValueAsync(transaction, bookId!.Value);
+                var book = await _bookDictionary!.TryGetValueAsync(transaction, bookId!.Value);
 
                 return book.Value.Price!.Value.ToString();
             }
@@ -123,14 +104,33 @@ namespace Bookstore
 
         public async Task<string> GetItem(long? bookId)
         {
-            using (var transaction = this.StateManager.CreateTransaction())
+            using (var transaction = StateManager.CreateTransaction())
             {
-                var book = await _bookDictionary.TryGetValueAsync(transaction, bookId!.Value);
+                var book = await _bookDictionary!.TryGetValueAsync(transaction, bookId!.Value);
 
                 return JsonConvert.SerializeObject(book.Value);
             }
 
             throw null!;
+        }
+
+        #endregion
+
+        #region ITransaction
+
+        public Task<bool> Prepare()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task Commit()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task RollBack()
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

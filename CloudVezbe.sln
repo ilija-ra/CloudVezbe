@@ -9,15 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunicationLibrary", "CommunicationLibrary\CommunicationLibrary.csproj", "{4C37D988-86BE-4E73-BC51-7D8C2B10CEF8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidatorStatefulService", "ValidatorStatefulService\ValidatorStatefulService.csproj", "{02E3868D-7C17-4373-ABF4-63090290AA60}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation", "Validation\Validation.csproj", "{B1C4A085-D26E-41FC-9F5F-E86AD4FA97EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionCoordinator", "TransactionCoordinator\TransactionCoordinator.csproj", "{4E6DC895-09AE-475E-8916-EB09E1606438}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionCoordinator", "TransactionCoordinator\TransactionCoordinator.csproj", "{4E6DC895-09AE-475E-8916-EB09E1606438}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookstore", "Bookstore\Bookstore.csproj", "{5A77F768-4E94-4A45-8F70-E2779B676701}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bookstore", "Bookstore\Bookstore.csproj", "{5A77F768-4E94-4A45-8F70-E2779B676701}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank\Bank.csproj", "{02BCBC90-2F33-45C6-AFCC-9BBB67C8F408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bank", "Bank\Bank.csproj", "{02BCBC90-2F33-45C6-AFCC-9BBB67C8F408}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,14 +53,6 @@ Global
 		{4C37D988-86BE-4E73-BC51-7D8C2B10CEF8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C37D988-86BE-4E73-BC51-7D8C2B10CEF8}.Release|x64.ActiveCfg = Release|Any CPU
 		{4C37D988-86BE-4E73-BC51-7D8C2B10CEF8}.Release|x64.Build.0 = Release|Any CPU
-		{02E3868D-7C17-4373-ABF4-63090290AA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{02E3868D-7C17-4373-ABF4-63090290AA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{02E3868D-7C17-4373-ABF4-63090290AA60}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{02E3868D-7C17-4373-ABF4-63090290AA60}.Debug|x64.Build.0 = Debug|Any CPU
-		{02E3868D-7C17-4373-ABF4-63090290AA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{02E3868D-7C17-4373-ABF4-63090290AA60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{02E3868D-7C17-4373-ABF4-63090290AA60}.Release|x64.ActiveCfg = Release|Any CPU
-		{02E3868D-7C17-4373-ABF4-63090290AA60}.Release|x64.Build.0 = Release|Any CPU
 		{B1C4A085-D26E-41FC-9F5F-E86AD4FA97EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B1C4A085-D26E-41FC-9F5F-E86AD4FA97EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1C4A085-D26E-41FC-9F5F-E86AD4FA97EE}.Debug|x64.ActiveCfg = Debug|Any CPU
