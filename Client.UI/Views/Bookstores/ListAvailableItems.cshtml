@@ -1,14 +1,14 @@
-﻿@model IEnumerable<Communication.Models.BookViewModel>
+﻿@model IEnumerable<Client.UI.Models.BookViewModel>
 
 @{
-    ViewData["Title"] = "ListAvailableItems";
+    ViewData["Title"] = "Books";
 }
 
-<h1>ListAvailableItems</h1>
+<h1>List of books</h1>
 
-<p>
+@*<p>
     <a asp-action="Create">Create New</a>
-</p>
+</p>*@
 <table class="table">
     <thead>
         <tr>
@@ -30,9 +30,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Quantity)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.Id)
-            </th>
+            </th>*@
             <th></th>
         </tr>
     </thead>
@@ -61,9 +61,9 @@
                 @Html.DisplayFor(modelItem => item.Id)
             </td>*@
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |*@
                 @Html.ActionLink("Details", "GetItem", "Bookstores", new { id = item.Id }) |
-                @Html.ActionLink("Purchase", "EnlistPurchase", "Bookstores", new { bookId = item.Id,  })
+                @Html.ActionLink("Purchase item", "EnlistPurchase", "Bookstores", new { bookId = item.Id, count = 0 })
             </td>
         </tr>
 }

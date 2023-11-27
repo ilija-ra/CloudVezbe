@@ -1,4 +1,4 @@
-﻿using Communication.Models;
+﻿using Client.UI.Models;
 using Communication.Validation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.ServiceFabric.Services.Remoting.Client;
@@ -16,22 +16,41 @@ namespace Client.Controllers
         {
             IValidation? validationProxy = ServiceProxy.Create<IValidation>(new Uri("fabric:/CloudVezbe/Validation"));
 
+            List<string> result = await validationProxy.ListAvailableItems();
+
+            if (result is null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+
             var books = new List<BookViewModel>();
 
-            List<string> booksJson = await validationProxy.ListAvailableItems();
-
-            booksJson.ForEach(x => books.Add(JsonConvert.DeserializeObject<BookViewModel>(x)!));
+            result.ForEach(x => books.Add(JsonConvert.DeserializeObject<BookViewModel>(x)!));
 
             return View(books);
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("EnlistPurchase")]
         public async Task<IActionResult> EnlistPurchase(long bookId, uint count)
         {
+            return View(new EnlistPurchaseViewModel() { BookId = bookId, Count = count });
+        }
+
+        [HttpPost]
+        [Route("EnlistPurchase")]
+        public async Task<IActionResult> EnlistPurchase([FromForm] EnlistPurchaseViewModel model)
+        {
             IValidation? validationProxy = ServiceProxy.Create<IValidation>(new Uri("fabric:/CloudVezbe/Validation"));
 
-            return Ok(await validationProxy.EnlistPurchase(bookId, count));
+            string result = await validationProxy.EnlistPurchase(model.BookId, model.Count);
+
+            if (result is null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+
+            return RedirectToAction("ListAvailableItems");
         }
 
         [HttpGet]
@@ -40,7 +59,14 @@ namespace Client.Controllers
         {
             var validationProxy = ServiceProxy.Create<IValidation>(new Uri("fabric:/CloudVezbe/Validation"));
 
-            double price = JsonConvert.DeserializeObject<double>(await validationProxy.GetItemPrice(id))!;
+            var result = await validationProxy.GetItemPrice(id);
+
+            if (result is null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+
+            double price = JsonConvert.DeserializeObject<double>(result);
 
             return View(price);
         }
@@ -51,14 +77,14 @@ namespace Client.Controllers
         {
             var validationProxy = ServiceProxy.Create<IValidation>(new Uri("fabric:/CloudVezbe/Validation"));
 
-            string bookJson = await validationProxy.GetItem(id);
+            string result = await validationProxy.GetItem(id);
 
-            if (bookJson is null)
+            if (result is null)
             {
-                return View(new BookViewModel());
+                return RedirectToAction("Error", "Home");
             }
 
-            BookViewModel book = JsonConvert.DeserializeObject<BookViewModel>(bookJson)!;
+            BookViewModel book = JsonConvert.DeserializeObject<BookViewModel>(result)!;
 
             return View(book);
         }

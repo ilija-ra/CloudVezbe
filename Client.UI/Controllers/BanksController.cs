@@ -1,4 +1,5 @@
-﻿using Communication.Validation;
+﻿using Client.UI.Models;
+using Communication.Validation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.ServiceFabric.Services.Remoting.Client;
 using Newtonsoft.Json;
@@ -7,7 +8,7 @@ namespace Client.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class BanksController : ControllerBase
+    public class BanksController : Controller
     {
         [HttpGet]
         [Route("ListClients")]
@@ -15,22 +16,41 @@ namespace Client.Controllers
         {
             IValidation? validationProxy = ServiceProxy.Create<IValidation>(new Uri("fabric:/CloudVezbe/Validation"));
 
-            var clients = new List<Communication.Models.ClientViewModel>();
+            List<string> result = await validationProxy.ListClients();
 
-            List<string> clientsJson = await validationProxy.ListClients();
+            if (result is null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
 
-            clientsJson.ForEach(x => clients.Add(JsonConvert.DeserializeObject<Communication.Models.ClientViewModel>(x)!));
+            var clients = new List<ClientViewModel>();
 
-            return Ok(clients);
+            result.ForEach(x => clients.Add(JsonConvert.DeserializeObject<ClientViewModel>(x)!));
+
+            return View(clients);
+        }
+
+        [HttpGet]
+        [Route("EnlistMoneyTransfer")]
+        public async Task<IActionResult> EnlistMoneyTransfer(long userSendId)
+        {
+            return View(new EnlistMoneyTransferViewModel() { UserSendId = userSendId });
         }
 
         [HttpPost]
         [Route("EnlistMoneyTransfer")]
-        public async Task<IActionResult> EnlistMoneyTransfer(long userSend, long? userReceive, double amount)
+        public async Task<IActionResult> EnlistMoneyTransfer([FromForm] EnlistMoneyTransferViewModel model)
         {
             IValidation? validationProxy = ServiceProxy.Create<IValidation>(new Uri("fabric:/CloudVezbe/Validation"));
 
-            return Ok(await validationProxy.EnlistMoneyTransfer(userSend, userReceive, amount));
+            string result = await validationProxy.EnlistMoneyTransfer(model.UserSendId, model.UserReceiveId, model.Amount);
+
+            if (result is null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+
+            return RedirectToAction("ListClients");
         }
     }
 }

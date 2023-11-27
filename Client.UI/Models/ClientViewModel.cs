@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Communication.Models
+namespace Client.UI.Models
 {
     [DataContract]
     public class ClientViewModel : PersonViewModel

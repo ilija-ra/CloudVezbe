@@ -1,10 +1,10 @@
-﻿using Communication.Models.Base;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
-namespace Communication.Models
+namespace Client.UI.Models
 {
     [DataContract]
-    public class PersonViewModel : BaseEntityViewModel
+    public class PersonViewModel : Base.BaseEntityViewModel
     {
         [DataMember]
         public string? FirstName { get; set; }
@@ -13,6 +13,7 @@ namespace Communication.Models
         public string? LastName { get; set; }
 
         [DataMember]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? DateOfBirth { get; set; }
     }
 }

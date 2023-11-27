@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Communication.Models.Base
+namespace Client.UI.Models.Base
 {
     [DataContract]
     public class BaseEntityViewModel

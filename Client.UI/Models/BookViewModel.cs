@@ -1,7 +1,7 @@
-﻿using Communication.Models.Base;
+﻿using Client.UI.Models.Base;
 using System.Runtime.Serialization;
 
-namespace Communication.Models
+namespace Client.UI.Models
 {
     [DataContract]
     public class BookViewModel : BaseEntityViewModel

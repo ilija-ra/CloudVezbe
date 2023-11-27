@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client.UI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/GithubRepositoriesFaculty/Cloud racunarstvo u infrastrukturnim sistemima/CloudVezbe/Client.UI/Views/Banks/EnlistMoneyTransfer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua3NcRW5saXN0TW9uZXlUcmFuc2Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GithubRepositoriesFaculty/Cloud racunarstvo u infrastrukturnim sistemima/CloudVezbe/Client.UI/Views/Banks/ListClients.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua3NcTGlzdENsaWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GithubRepositoriesFaculty/Cloud racunarstvo u infrastrukturnim sistemima/CloudVezbe/Client.UI/Views/Bookstores/EnlistPurchase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3N0b3Jlc1xFbmxpc3RQdXJjaGFzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/GithubRepositoriesFaculty/Cloud racunarstvo u infrastrukturnim sistemima/CloudVezbe/Client.UI/Views/Bookstores/GetItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3N0b3Jlc1xHZXRJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,8 +1,3 @@
-C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\Validation.csproj.AssemblyReference.cache
-C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\Validation.GeneratedMSBuildEditorConfig.editorconfig
-C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\Validation.AssemblyInfoInputs.cache
-C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\Validation.AssemblyInfo.cs
-C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\Validation.csproj.CoreCompileInputs.cache
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\bin\Debug\net6.0\win7-x64\Validation.exe
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\bin\Debug\net6.0\win7-x64\Validation.deps.json
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\bin\Debug\net6.0\win7-x64\Validation.runtimeconfig.json
@@ -247,6 +242,11 @@ C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\Clou
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\bin\Debug\net6.0\win7-x64\ucrtbase.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\bin\Debug\net6.0\win7-x64\Communication.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\bin\Debug\net6.0\win7-x64\Communication.pdb
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\Validation.csproj.AssemblyReference.cache
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\Validation.GeneratedMSBuildEditorConfig.editorconfig
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\Validation.AssemblyInfoInputs.cache
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\Validation.AssemblyInfo.cs
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\Validation.csproj.CoreCompileInputs.cache
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\Validation.csproj.CopyComplete
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\Validation.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Validation\obj\Debug\net6.0\win7-x64\refint\Validation.dll
