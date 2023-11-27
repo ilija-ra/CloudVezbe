@@ -59,6 +59,14 @@
             "Microsoft.ServiceFabric.Services": {
               "target": "Package",
               "version": "[7.0.1816, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

@@ -49,10 +49,16 @@ namespace Client.UI
                         // Configure the HTTP request pipeline.
                         if (app.Environment.IsDevelopment())
                         {
-                            //app.UseSwagger();
-                            //app.UseSwaggerUI();
+                            app.UseDeveloperExceptionPage();
+                        }
+                        else
+                        {
+                            app.UseExceptionHandler("/Home/Error");
+                            app.UseHsts();
                         }
 
+
+                        app.UseStaticFiles();
                         app.UseRouting();
                         app.UseMvcWithDefaultRoute();
                         app.UseAuthorization();

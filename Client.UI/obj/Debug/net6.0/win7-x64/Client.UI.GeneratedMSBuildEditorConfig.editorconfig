@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Client.UI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/GithubRepositoriesFaculty/Cloud racunarstvo u infrastrukturnim sistemima/CloudVezbe/Client.UI/Views/Bookstores/GetItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3N0b3Jlc1xHZXRJdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GithubRepositoriesFaculty/Cloud racunarstvo u infrastrukturnim sistemima/CloudVezbe/Client.UI/Views/Bookstores/ListAvailableItems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3N0b3Jlc1xMaXN0QXZhaWxhYmxlSXRlbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/GithubRepositoriesFaculty/Cloud racunarstvo u infrastrukturnim sistemima/CloudVezbe/Client.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
