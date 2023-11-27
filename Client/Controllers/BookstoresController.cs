@@ -1,5 +1,5 @@
-﻿using CommunicationLibrary.Models;
-using CommunicationLibrary.Validation;
+﻿using Communication.Models;
+using Communication.Validation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.ServiceFabric.Services.Remoting.Client;
 using Newtonsoft.Json;

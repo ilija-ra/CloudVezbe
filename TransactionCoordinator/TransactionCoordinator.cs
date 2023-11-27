@@ -1,7 +1,7 @@
-using CommunicationLibrary.Bank;
-using CommunicationLibrary.Bookstore;
-using CommunicationLibrary.Enums;
-using CommunicationLibrary.TransactionCoordinator;
+using Communication.Bank;
+using Communication.Bookstore;
+using Communication.Enums;
+using Communication.TransactionCoordinator;
 using Microsoft.ServiceFabric.Services.Client;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
 using Microsoft.ServiceFabric.Services.Remoting.Client;

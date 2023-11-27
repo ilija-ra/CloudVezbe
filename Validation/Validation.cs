@@ -1,5 +1,5 @@
-using CommunicationLibrary.TransactionCoordinator;
-using CommunicationLibrary.Validation;
+using Communication.TransactionCoordinator;
+using Communication.Validation;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
 using Microsoft.ServiceFabric.Services.Remoting.Client;
 using Microsoft.ServiceFabric.Services.Remoting.Runtime;

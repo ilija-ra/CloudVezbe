@@ -1,5 +1,5 @@
-using CommunicationLibrary.Bookstore;
-using CommunicationLibrary.Models;
+using Communication.Bookstore;
+using Communication.Models;
 using Microsoft.ServiceFabric.Data;
 using Microsoft.ServiceFabric.Data.Collections;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
@@ -10,7 +10,7 @@ using System.Fabric;
 
 namespace Bookstore
 {
-    internal sealed class Bookstore : StatefulService, IBookstore, CommunicationLibrary.TransactionCoordinator.ITransaction
+    internal sealed class Bookstore : StatefulService, IBookstore, Communication.TransactionCoordinator.ITransaction
     {
         private IReliableDictionary<long, Book>? _bookDictionary;
 

@@ -1,3 +1,8 @@
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\Bank.csproj.AssemblyReference.cache
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\Bank.GeneratedMSBuildEditorConfig.editorconfig
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\Bank.AssemblyInfoInputs.cache
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\Bank.AssemblyInfo.cs
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\Bank.csproj.CoreCompileInputs.cache
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Bank.exe
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Bank.deps.json
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Bank.runtimeconfig.json
@@ -15,7 +20,11 @@ C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\Clou
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Microsoft.ServiceFabric.ReliableCollection.Interop.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Microsoft.ServiceFabric.Data.Interfaces.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Microsoft.ServiceFabric.Diagnostics.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Microsoft.ServiceFabric.FabricTransport.V2.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Microsoft.ServiceFabric.FabricTransport.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Microsoft.ServiceFabric.Services.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Microsoft.ServiceFabric.Services.Remoting.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Newtonsoft.Json.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Microsoft.CSharp.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Microsoft.VisualBasic.Core.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Microsoft.VisualBasic.dll
@@ -237,11 +246,8 @@ C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\Clou
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\mscorrc.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\msquic.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\ucrtbase.dll
-C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\Bank.csproj.AssemblyReference.cache
-C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\Bank.GeneratedMSBuildEditorConfig.editorconfig
-C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\Bank.AssemblyInfoInputs.cache
-C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\Bank.AssemblyInfo.cs
-C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\Bank.csproj.CoreCompileInputs.cache
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Communication.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\bin\Debug\net6.0\win7-x64\Communication.pdb
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\Bank.csproj.CopyComplete
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\Bank.dll
 C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Bank\obj\Debug\net6.0\win7-x64\refint\Bank.dll

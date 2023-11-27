@@ -1,7 +1,7 @@
-using CommunicationLibrary;
-using CommunicationLibrary.Bank;
-using CommunicationLibrary.Enums;
-using CommunicationLibrary.Models;
+using Communication;
+using Communication.Bank;
+using Communication.Enums;
+using Communication.Models;
 using Microsoft.ServiceFabric.Data;
 using Microsoft.ServiceFabric.Data.Collections;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
@@ -12,7 +12,7 @@ using System.Fabric;
 
 namespace Bank
 {
-    internal sealed class Bank : StatefulService, IBank, CommunicationLibrary.TransactionCoordinator.ITransaction
+    internal sealed class Bank : StatefulService, IBank, Communication.TransactionCoordinator.ITransaction
     {
         private IReliableDictionary<long, Client>? _clientDictionary;
 

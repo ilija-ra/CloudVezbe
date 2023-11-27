@@ -1,4 +1,4 @@
-﻿using CommunicationLibrary.Validation;
+﻿using Communication.Validation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.ServiceFabric.Services.Remoting.Client;
 using Newtonsoft.Json;
@@ -15,11 +15,11 @@ namespace Client.Controllers
         {
             IValidation? validationProxy = ServiceProxy.Create<IValidation>(new Uri("fabric:/CloudVezbe/Validation"));
 
-            var clients = new List<CommunicationLibrary.Models.Client>();
+            var clients = new List<Communication.Models.Client>();
 
             List<string> clientsJson = await validationProxy.ListClients();
 
-            clientsJson.ForEach(x => clients.Add(JsonConvert.DeserializeObject<CommunicationLibrary.Models.Client>(x)!));
+            clientsJson.ForEach(x => clients.Add(JsonConvert.DeserializeObject<Communication.Models.Client>(x)!));
 
             return Ok(clients);
         }

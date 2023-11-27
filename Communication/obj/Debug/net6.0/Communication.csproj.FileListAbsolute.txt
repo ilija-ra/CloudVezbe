@@ -1,0 +1,12 @@
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Communication\bin\Debug\net6.0\Communication.deps.json
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Communication\bin\Debug\net6.0\Communication.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Communication\bin\Debug\net6.0\Communication.pdb
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Communication\obj\Debug\net6.0\Communication.csproj.AssemblyReference.cache
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Communication\obj\Debug\net6.0\Communication.GeneratedMSBuildEditorConfig.editorconfig
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Communication\obj\Debug\net6.0\Communication.AssemblyInfoInputs.cache
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Communication\obj\Debug\net6.0\Communication.AssemblyInfo.cs
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Communication\obj\Debug\net6.0\Communication.csproj.CoreCompileInputs.cache
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Communication\obj\Debug\net6.0\Communication.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Communication\obj\Debug\net6.0\refint\Communication.dll
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Communication\obj\Debug\net6.0\Communication.pdb
+C:\GithubRepositoriesFaculty\Cloud racunarstvo u infrastrukturnim sistemima\CloudVezbe\Communication\obj\Debug\net6.0\ref\Communication.dll
