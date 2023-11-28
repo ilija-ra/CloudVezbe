@@ -20,7 +20,7 @@ namespace Client.Controllers
 
             if (result is null)
             {
-                return RedirectToAction("Error", "Home");
+                return RedirectToAction("Error", "Home", new { errorMessage = "Cannot get list of books." });
             }
 
             var books = new List<BookViewModel>();
@@ -47,7 +47,7 @@ namespace Client.Controllers
 
             if (result is null)
             {
-                return RedirectToAction("Error", "Home");
+                return RedirectToAction("Error", "Home", new { errorMessage = "Cannot purchase." });
             }
 
             return RedirectToAction("ListAvailableItems", "Bookstores");
@@ -63,7 +63,7 @@ namespace Client.Controllers
 
             if (result is null)
             {
-                return RedirectToAction("Error", "Home");
+                return RedirectToAction("Error", "Home", new { errorMessage = "Cannot get book's price." });
             }
 
             double price = JsonConvert.DeserializeObject<double>(result);
@@ -81,7 +81,7 @@ namespace Client.Controllers
 
             if (result is null)
             {
-                return RedirectToAction("Error", "Home");
+                return RedirectToAction("Error", "Home", new { errorMessage = "Cannot get book." });
             }
 
             BookViewModel book = JsonConvert.DeserializeObject<BookViewModel>(result)!;

@@ -26,42 +26,84 @@ namespace TransactionCoordinator
         {
             IBookstore? bookstoreProxy = ServiceProxy.Create<IBookstore>(new Uri(bookstorePath), new ServicePartitionKey((int)PartiotionKeys.One));
 
-            return await bookstoreProxy.ListAvailableItems();
+            try
+            {
+                return await bookstoreProxy.ListAvailableItems();
+            }
+            catch (Exception)
+            {
+                return null!;
+            }
         }
 
         public async Task<string> EnlistPurchase(long? bookId, uint? count)
         {
             IBookstore? bookstoreProxy = ServiceProxy.Create<IBookstore>(new Uri(bookstorePath), new ServicePartitionKey((int)PartiotionKeys.One));
 
-            return (await bookstoreProxy.EnlistPurchase(bookId!.Value, count!.Value)).ToString();
+            try
+            {
+                return await bookstoreProxy.EnlistPurchase(bookId!.Value, count!.Value);
+            }
+            catch (Exception)
+            {
+                return null!;
+            }
         }
 
         public async Task<string> GetItemPrice(long? bookId)
         {
             IBookstore? bookstoreProxy = ServiceProxy.Create<IBookstore>(new Uri(bookstorePath), new ServicePartitionKey((int)PartiotionKeys.One));
 
-            return (await bookstoreProxy.GetItemPrice(bookId!.Value)).ToString();
+            try
+            {
+                return await bookstoreProxy.GetItemPrice(bookId!.Value);
+            }
+            catch (Exception)
+            {
+                return null!;
+            }
         }
 
         public async Task<string> GetItem(long? bookId)
         {
             IBookstore? bookstoreProxy = ServiceProxy.Create<IBookstore>(new Uri(bookstorePath), new ServicePartitionKey((int)PartiotionKeys.One));
 
-            return await bookstoreProxy.GetItem(bookId!.Value);
+            try
+            {
+                return await bookstoreProxy.GetItem(bookId!.Value);
+            }
+            catch (Exception)
+            {
+                return null!;
+            }
         }
 
         public async Task<List<string>> ListClients()
         {
             IBank? bankProxy = ServiceProxy.Create<IBank>(new Uri(bankPath), new ServicePartitionKey((int)PartiotionKeys.Two));
 
-            return await bankProxy.ListClients();
+            try
+            {
+                return await bankProxy.ListClients();
+            }
+            catch (Exception)
+            {
+                return null!;
+            }
         }
 
         public async Task<string> EnlistMoneyTransfer(long? userSend, long? userReceive, double? amount)
         {
             IBank? bankProxy = ServiceProxy.Create<IBank>(new Uri(bankPath), new ServicePartitionKey((int)PartiotionKeys.Two));
 
-            return await bankProxy.EnlistMoneyTransfer(userSend!.Value, userReceive!.Value, amount!.Value);
+            try
+            {
+                return await bankProxy.EnlistMoneyTransfer(userSend!.Value, userReceive!.Value, amount!.Value);
+            }
+            catch (Exception)
+            {
+                return null!;
+            }
         }
 
         #endregion

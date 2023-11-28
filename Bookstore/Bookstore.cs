@@ -1,3 +1,4 @@
+using Communication;
 using Communication.Bookstore;
 using Communication.Models;
 using Microsoft.ServiceFabric.Data;
@@ -68,20 +69,11 @@ namespace Bookstore
             using (var transaction = StateManager.CreateTransaction())
             {
                 ConditionalValue<Book> book = await _bookDictionary!.TryGetValueAsync(transaction, bookId!.Value);
+                var transactionContext = new TransactionContext { Book = book };
 
-                //if (!await Prepare())
-                //{
-                //    return null!;
-                //}
-
-                if (!book.HasValue)
+                if (!await Prepare(transactionContext, count!.Value))
                 {
-                    throw new KeyNotFoundException($"Book with Id {bookId} was not found.");
-                }
-
-                if (book.Value.Quantity == 0)
-                {
-                    throw new InvalidOperationException("There are no available books.");
+                    return null!;
                 }
 
                 var bookToUpdate = book.Value;
@@ -126,9 +118,24 @@ namespace Bookstore
 
         #region ITransaction
 
-        public async Task<bool> Prepare()
+        public async Task<bool> Prepare(TransactionContext context, object count)
         {
-            throw new NotImplementedException();
+            if (!(count is uint uintParameter))
+            {
+                return false;
+            }
+
+            if (!context.Book.HasValue)
+            {
+                return false;
+            }
+
+            if (context.Book.Value.Quantity < uintParameter)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         public async Task Commit(ITransaction transaction)

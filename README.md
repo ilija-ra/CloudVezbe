@@ -13,5 +13,8 @@ Bank:
 ![listOfClients](listofclients.png)
 ![moneyTransfer](moneyTransfer.png)
 
+Error mechanism:
+![error](error.png)
+
 Schema:
 ![services_schema](services.png)

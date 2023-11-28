@@ -72,9 +72,11 @@ namespace Bank
                 ConditionalValue<Client> clientToSend = await _clientDictionary!.TryGetValueAsync(transaction, userSend!.Value);
                 ConditionalValue<Client> clientToReceive = await _clientDictionary!.TryGetValueAsync(transaction, userReceive!.Value);
 
-                if (!clientToSend.HasValue || !clientToReceive.HasValue)
+                var transactionContext = new TransactionContext { ClientToSend = clientToSend, ClientToReceive = clientToReceive };
+
+                if (!await Prepare(transactionContext, amount!.Value))
                 {
-                    throw new KeyNotFoundException($"Client with Id {userSend} or {userReceive} was not found.");
+                    return null!;
                 }
 
                 var clientToSendUpdate = clientToSend.Value;
@@ -98,9 +100,24 @@ namespace Bank
 
         #region ITransaction
 
-        public Task<bool> Prepare()
+        public async Task<bool> Prepare(TransactionContext context, object amount)
         {
-            throw new NotImplementedException();
+            if (!(amount is double doubleParameter))
+            {
+                return false;
+            }
+
+            if (!context.ClientToSend.HasValue || !context.ClientToReceive.HasValue)
+            {
+                return false;
+            }
+
+            if (context.ClientToSend.Value.BankAccount < doubleParameter)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         public async Task Commit(ITransaction transaction)

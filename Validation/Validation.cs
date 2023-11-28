@@ -22,7 +22,14 @@ namespace Validation
         {
             ITransactionCoordinator? transactionProxy = ServiceProxy.Create<ITransactionCoordinator>(new Uri(transactionCoordinatorPath));
 
-            return await transactionProxy.ListAvailableItems();
+            try
+            {
+                return await transactionProxy.ListAvailableItems();
+            }
+            catch (Exception)
+            {
+                return null!;
+            }
         }
 
         public async Task<string> EnlistPurchase(long? bookId, uint? count)
@@ -36,9 +43,7 @@ namespace Validation
 
             try
             {
-                await transactionProxy.EnlistPurchase(bookId!.Value, count!.Value);
-
-                return string.Empty;
+                return await transactionProxy.EnlistPurchase(bookId!.Value, count!.Value);
             }
             catch (Exception)
             {
@@ -55,7 +60,14 @@ namespace Validation
 
             ITransactionCoordinator? transactionProxy = ServiceProxy.Create<ITransactionCoordinator>(new Uri(transactionCoordinatorPath));
 
-            return (await transactionProxy.GetItemPrice(bookId!.Value)).ToString();
+            try
+            {
+                return await transactionProxy.GetItemPrice(bookId!.Value);
+            }
+            catch (Exception)
+            {
+                return null!;
+            }
         }
 
         public async Task<string> GetItem(long? bookId)
@@ -67,14 +79,28 @@ namespace Validation
 
             ITransactionCoordinator? transactionProxy = ServiceProxy.Create<ITransactionCoordinator>(new Uri(transactionCoordinatorPath));
 
-            return (await transactionProxy.GetItem(bookId!.Value)).ToString();
+            try
+            {
+                return await transactionProxy.GetItem(bookId!.Value);
+            }
+            catch (Exception)
+            {
+                return null!;
+            }
         }
 
         public async Task<List<string>> ListClients()
         {
             ITransactionCoordinator? transactionProxy = ServiceProxy.Create<ITransactionCoordinator>(new Uri(transactionCoordinatorPath));
 
-            return await transactionProxy.ListClients();
+            try
+            {
+                return await transactionProxy.ListClients();
+            }
+            catch (Exception)
+            {
+                return null!;
+            }
         }
 
         public async Task<string> EnlistMoneyTransfer(long? userSend, long? userReceive, double? amount)
@@ -86,7 +112,14 @@ namespace Validation
 
             ITransactionCoordinator? transactionProxy = ServiceProxy.Create<ITransactionCoordinator>(new Uri(transactionCoordinatorPath));
 
-            return (await transactionProxy.EnlistMoneyTransfer(userSend!.Value, userReceive!.Value, amount!.Value)).ToString();
+            try
+            {
+                return await transactionProxy.EnlistMoneyTransfer(userSend!.Value, userReceive!.Value, amount!.Value);
+            }
+            catch (Exception)
+            {
+                return null!;
+            }
         }
 
         #endregion

@@ -20,7 +20,7 @@ namespace Client.Controllers
 
             if (result is null)
             {
-                return RedirectToAction("Error", "Home");
+                return RedirectToAction("Error", "Home", new { errorMessage = "Cannot get clients." });
             }
 
             var clients = new List<ClientViewModel>();
@@ -47,7 +47,7 @@ namespace Client.Controllers
 
             if (result is null)
             {
-                return RedirectToAction("Error", "Home");
+                return RedirectToAction("Error", "Home", new { errorMessage = "Cannot execute money transfer." });
             }
 
             return RedirectToAction("ListClients", "Banks");

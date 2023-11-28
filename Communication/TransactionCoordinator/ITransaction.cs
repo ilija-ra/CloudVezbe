@@ -2,7 +2,7 @@
 {
     public interface ITransaction
     {
-        Task<bool> Prepare();
+        Task<bool> Prepare(TransactionContext context, object value);
 
         Task Commit(Microsoft.ServiceFabric.Data.ITransaction transaction);
 
