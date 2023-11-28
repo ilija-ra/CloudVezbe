@@ -43,7 +43,8 @@ namespace Bookstore
                 foreach (Book book in books)
                     await _bookDictionary!.AddOrUpdateAsync(transaction, book.Id!.Value, book, (k, v) => v);
 
-                await transaction.CommitAsync();
+                //await transaction.CommitAsync();
+                await FinishTransaction(transaction);
             }
 
             var booksJson = new List<string>();
@@ -68,6 +69,11 @@ namespace Bookstore
             {
                 ConditionalValue<Book> book = await _bookDictionary!.TryGetValueAsync(transaction, bookId!.Value);
 
+                //if (!await Prepare())
+                //{
+                //    return null!;
+                //}
+
                 if (!book.HasValue)
                 {
                     throw new KeyNotFoundException($"Book with Id {bookId} was not found.");
@@ -84,9 +90,11 @@ namespace Bookstore
 
                 await _bookDictionary.TryUpdateAsync(transaction, bookId!.Value, bookToUpdate, book.Value);
 
-                await transaction.CommitAsync();
+                //await transaction.CommitAsync();
 
-                return string.Empty;
+                //return string.Empty;
+
+                return await FinishTransaction(transaction);
             }
         }
 
@@ -118,22 +126,36 @@ namespace Bookstore
 
         #region ITransaction
 
-        public Task<bool> Prepare()
+        public async Task<bool> Prepare()
         {
             throw new NotImplementedException();
         }
 
-        public Task Commit()
+        public async Task Commit(ITransaction transaction)
         {
-            throw new NotImplementedException();
+            await transaction.CommitAsync();
         }
 
-        public Task RollBack()
+        public async Task RollBack(ITransaction transaction)
         {
-            throw new NotImplementedException();
+            transaction.Abort();
         }
 
         #endregion
+
+        public async Task<string> FinishTransaction(ITransaction transaction)
+        {
+            try
+            {
+                await Commit(transaction);
+                return string.Empty;
+            }
+            catch
+            {
+                await RollBack(transaction);
+                return null!;
+            }
+        }
 
         protected override IEnumerable<ServiceReplicaListener> CreateServiceReplicaListeners()
         {

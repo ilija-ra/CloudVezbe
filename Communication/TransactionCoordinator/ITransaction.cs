@@ -4,8 +4,8 @@
     {
         Task<bool> Prepare();
 
-        Task Commit();
+        Task Commit(Microsoft.ServiceFabric.Data.ITransaction transaction);
 
-        Task RollBack();
+        Task RollBack(Microsoft.ServiceFabric.Data.ITransaction transaction);
     }
 }

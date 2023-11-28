@@ -50,7 +50,7 @@ namespace Client.Controllers
                 return RedirectToAction("Error", "Home");
             }
 
-            return RedirectToAction("ListAvailableItems");
+            return RedirectToAction("ListAvailableItems", "Bookstores");
         }
 
         [HttpGet]

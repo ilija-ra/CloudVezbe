@@ -11,7 +11,7 @@ using System.Fabric;
 
 namespace TransactionCoordinator
 {
-    internal sealed class TransactionCoordinator : StatelessService, ITransactionCoordinator, ITransaction
+    internal sealed class TransactionCoordinator : StatelessService, ITransactionCoordinator
     {
         private readonly string bookstorePath = @"fabric:/CloudVezbe/Bookstore";
         private readonly string bankPath = @"fabric:/CloudVezbe/Bank";
@@ -62,25 +62,6 @@ namespace TransactionCoordinator
             IBank? bankProxy = ServiceProxy.Create<IBank>(new Uri(bankPath), new ServicePartitionKey((int)PartiotionKeys.Two));
 
             return await bankProxy.EnlistMoneyTransfer(userSend!.Value, userReceive!.Value, amount!.Value);
-        }
-
-        #endregion
-
-        #region ITransactionImplementation
-
-        public Task Commit()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> Prepare()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task RollBack()
-        {
-            throw new NotImplementedException();
         }
 
         #endregion

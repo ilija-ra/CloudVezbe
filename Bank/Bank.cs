@@ -45,7 +45,8 @@ namespace Bank
                 foreach (Client client in clients)
                     await _clientDictionary!.AddOrUpdateAsync(transaction, client.Id!.Value, client, (k, v) => v);
 
-                await transaction.CommitAsync();
+                //await transaction.CommitAsync();
+                await FinishTransaction(transaction);
             }
 
             var clientsJson = new List<string>();
@@ -85,9 +86,11 @@ namespace Bank
                 await _clientDictionary.TryUpdateAsync(transaction, userSend!.Value, clientToSendUpdate, clientToSend.Value);
                 await _clientDictionary.TryUpdateAsync(transaction, userReceive!.Value, clientToReceiveUpdate, clientToReceive.Value);
 
-                await transaction.CommitAsync();
+                //await transaction.CommitAsync();
 
-                return string.Empty;
+                //return string.Empty;
+
+                return await FinishTransaction(transaction);
             }
         }
 
@@ -100,17 +103,31 @@ namespace Bank
             throw new NotImplementedException();
         }
 
-        public Task Commit()
+        public async Task Commit(ITransaction transaction)
         {
-            throw new NotImplementedException();
+            await transaction.CommitAsync();
         }
 
-        public Task RollBack()
+        public async Task RollBack(ITransaction transaction)
         {
-            throw new NotImplementedException();
+            transaction.Abort();
         }
 
         #endregion
+
+        public async Task<string> FinishTransaction(ITransaction transaction)
+        {
+            try
+            {
+                await Commit(transaction);
+                return string.Empty;
+            }
+            catch
+            {
+                await RollBack(transaction);
+                return null!;
+            }
+        }
 
         protected override IEnumerable<ServiceReplicaListener> CreateServiceReplicaListeners()
         {

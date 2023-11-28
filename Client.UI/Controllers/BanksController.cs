@@ -50,7 +50,7 @@ namespace Client.Controllers
                 return RedirectToAction("Error", "Home");
             }
 
-            return RedirectToAction("ListClients");
+            return RedirectToAction("ListClients", "Banks");
         }
     }
 }
